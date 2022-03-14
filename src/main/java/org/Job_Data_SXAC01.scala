@@ -196,7 +196,7 @@ class MySqlSink extends RichSinkFunction[ac01] {
       insertStmt.execute()
       println(Job_Data_SXAC01.NowDate() + "------------------已插入这条数据>>" +value.aac001+" "+value.dxp_share_batch_id)
     }  else {
-      println(Job_Data_SXAC01.NowDate() + "------------------已存在不插入>>" +value.aac001+" "+value.dxp_share_batch_id)
+      println(Job_Data_SXAC01.NowDate() + "------------------已存在，不插入>>" +value.aac001+" "+value.dxp_share_batch_id)
     }
 
   }
